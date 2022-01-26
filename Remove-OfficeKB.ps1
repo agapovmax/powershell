@@ -1,8 +1,8 @@
 # Функция удаляет обновление для MS Office KB5002104, KB5002099 
 # https://www.devhut.net/access-lock-file-issues/
-# Example: Remove-OfficeKB -Computername Comp1
+# Example: Remove-OfficeKB -Computername Comp1 -Result
 
-function Remove-OfficeKB { # Удаление обновлений KB MS Office 2013-2016
+function Remove-OfficeKB { # Удаление обновлений MS Office 2013-2016
         param(
           [parameter(Mandatory=$true)][string]$ComputerName,
           [switch]$Result
